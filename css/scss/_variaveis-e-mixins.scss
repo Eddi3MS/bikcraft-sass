@@ -1,0 +1,24 @@
+// Cores
+$primary_color: hsl(43, 94%, 62%);
+$black: #000;
+$white: #f6f6f7;
+
+// Tipografia
+@mixin font-01($tamanho) {
+  @if $tamanho < 36 {
+    font-size: $tamanho / 16 + rem;
+    line-height: $tamanho / 16 * 1.43 + rem;
+  } @else {
+    font-size: $tamanho / 16 + rem;
+  }
+}
+
+@mixin font-02($tamanho) {
+  font-family: Georgia, "Times New Roman", serif;
+  @if $tamanho < 36 {
+    font-size: $tamanho / 16 + rem;
+    line-height: $tamanho / 16 * 1.45 + rem;
+  } @else {
+    font-size: $tamanho / 16 + rem;
+  }
+}
